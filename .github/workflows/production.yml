@@ -43,7 +43,7 @@ jobs:
   deploy:
     needs: test
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/master'
 
     steps:
       - name: Checkout Repository
@@ -61,8 +61,7 @@ jobs:
           path: build
 
       - name: Install Netlify CLI
-        run: |
-        npm install -g netlify-cli
+        run: npm install -g netlify-cli
 
       - name: Deploy to Netlify
         run: npx netlify deploy --dir=build --site ${{ secrets.NETLIFY_SITE_ID }} --auth ${{ secrets.NETLIFY_AUTH_TOKEN }} --prod
