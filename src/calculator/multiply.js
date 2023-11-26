@@ -1,8 +1,8 @@
 /**
  * Multiplication
  */
-function mul(firstNum, secondNum) {
+function multiply(firstNum, secondNum) {
     return firstNum * secondNum;
   }
   
-  module.exports = mul 
+  module.exports = multiply

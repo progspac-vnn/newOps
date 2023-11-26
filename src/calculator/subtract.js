@@ -1,8 +1,8 @@
 /**
  * Subtraction
  */
-function sub(firstNum, secondNum) {
+function subtract(firstNum, secondNum) {
     return firstNum - secondNum;
   }
   
-  module.exports = sub
+  module.exports = subtract

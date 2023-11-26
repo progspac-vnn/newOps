@@ -1,8 +1,8 @@
 /**
  * Division
  */
-function div(firstNum, secondNum) {
+function divide(firstNum, secondNum) {
     return firstNum / secondNum;
   }
   
-  module.exports = div 
+  module.exports = divide 
